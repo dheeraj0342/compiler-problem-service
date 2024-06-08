@@ -4,7 +4,7 @@ const BaseError = require("./base.error");
 
 class NotImplemented extends BaseError{
     constructor(methodName){
-        super('Not Implemented',StatusCodes.NOT_FOUND,`${methodName} is not implemented`,{});
+        super('Not Implemented',StatusCodes.NOT_IMPLEMENTED,`${methodName} is not implemented`,{});
     }
 }
 
